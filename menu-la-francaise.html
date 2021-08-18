@@ -7,12 +7,18 @@
     <script src="https://kit.fontawesome.com/9363fa5240.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100,200,300,400,500,700,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <header>
-    <img class="logo-main" src="assets/images/ohmyfood@2x.svg">
+    <div class="navigation">
+        <div class="arrow">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <img class="logo-main" src="assets/images/ohmyfood@2x.svg">
+    </div>
 </header>
 
 <body>
@@ -22,60 +28,85 @@
     <div class="menubody">
         <span class="francaiseicon">
             <h2>À la française</h2>
-            <i class="far fa-heart"></i>
+            <div class="menu-icon">
+                <i class="far fa-heart fa-lg"></i>
+            </div>
         </span>
-        <span>ENTRÉES</span>
+        <span class="options">ENTRÉES</span>
         <div class="chip">
-            <h3>Tartare de poulpe acidulé</h3>
-            <p>Aux zests d´orange 25€</p>
+            <h4>Tartare de poulpe acidulé</h4>
+            <p class="menu-info">Aux zests d´orange</p>
+            <div class="menu-price">
+                <span>25€</span>
+            </div>
         </div>
         <div class="chip">
-            <h3>Velouté de légumes d`antam </h3>
-            <p>Carotte, panais, topinambour 35€</p>
+            <h4>Velouté de légumes d`antam </h4>
+            <p class="menu-info">Carotte, panais, topinambour</p>
+            <div class="menu-price">
+                <span>35€</span>
+            </div>
         </div>
         <div class="chip">
-            <h3>Soupe à l`oignon</h3>
-            <p>Revisitée 25€</p>
+            <h4>Soupe à l`oignon</h4>
+            <p class="menu-info">Revisitée</p>
+            <div class="menu-price">
+                <span>25€</span>
+            </div>
         </div>
-        <span>PLATS</span>
+        <span class="options">PLATS</span>
         <div class="chip">
-            <h3>Coquilles Saint-Jacques</h3>
-            <p>Accompagnées d`une purée de panais 40€</p>
-        </div>
-        <div class="chip">
-            <h3>Magret de canard</h3>
-            <p>Et parmentier de pommes de terres 35€</p>
-        </div>
-        <div class="chip">
-            <h3>Pigeonneau d´ille-et-Vilaine</h3>
-            <p>Sur son lit de gnocchis aux légumes 44€</p>
-        </div>
-        <span>DESSERTS</span>
-        <div class="chip">
-            <h3>Pétales de violettes glacés</h3>
-            <p>Et purée de noisettes 18€</p>
+            <h4>Coquilles Saint-Jacques</h4>
+            <p>Accompagnées d`une purée de panais</p>
+            <div class="menu-price">
+                <span>40€</span>
+            </div>
         </div>
         <div class="chip">
-            <h3>Fondant au chocolat</h3>
-            <p>Revisité 22€</p>
+            <h4>Magret de canard</h4>
+            <p class="menu-info">Et parmentier de pommes de terres</p>
+            <div class="menu-price">
+                <span>35€</span>
+            </div>
         </div>
         <div class="chip">
-            <h3>Millefeuille croustilant</h3>
-            <p>Myrtilles et pâte d´amande 23€</p>
+            <h4>Pigeonneau d´ille-et-Vilaine</h4>
+            <p class="menu-info">Sur son lit de gnocchis aux légumes</p>
+            <div class="menu-price">
+                <span>44€</span>
+            </div>
+        </div>
+        <span class="options">DESSERTS</span>
+        <div class="chip">
+            <h4>Pétales de violettes glacés</h4>
+            <p class="menu-info">Et purée de noisettes</p>
+            <div class="menu-price">
+                <span>18€</span>
+            </div>
+        </div>
+        <div class="chip">
+            <h4>Fondant au chocolat</h4>
+            <p class="menu-info">Revisité</p>
+            <div class="menu-price">
+                <span>22€</span>
+            </div>
+        </div>
+        <div class="chip">
+            <h4>Millefeuille croustilant</h4>
+            <p class="menu-info">Myrtilles et pâte d´amande</p>
+            <div class="menu-price">
+                <span>23€</span>
+            </div>
         </div>
     </div>
     <div class="button-commander">
         <button type="button" class="button">Commander</button>
     </div>
-    <footer class="footer">
+    <footer>
+        <h1>ohmyfood</h1>
         <ul>
-            <h1>ohmyfood</h1>
-            <li class="footericon">Proposer un restaurant
-                <i class="fas fa-utensils"></i>
-            </li>
-            <li class="footericon">Devenir partenaire
-                <i class="fas fa-hands-helping"></i>
-            </li>
+            <li><i class="fas fa-utensils"></i><span> Proposer un restaurant</span></li>
+            <li><i class="fas fa-hands-helping"></i><span>Devenir partenaire</span></li>
             <li>Mentions légales</i>
             <li>Contact</li>
         </ul>
