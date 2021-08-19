@@ -162,8 +162,8 @@ h3 {
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    
 }
-  
 
 .RestaurantsMain {
     display: flex;
@@ -378,6 +378,7 @@ h4{
     padding-top: 5px;
     top: -60px;
     position: relative;
+    animation: opac 1s;
 }
 
 .check-mark{
