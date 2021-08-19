@@ -379,6 +379,31 @@ h4{
     top: -60px;
     position: relative;
 }
+
+.check-mark{
+    position: absolute;
+    background-color: aquamarine;
+    height: 76px;
+    width: 65px;
+    top: 341px;
+    left: 300px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    animation: fadebackground 6s infinite;
+    
+}
+@keyframes fadebackground {
+    from {background-color: aquamarine;}
+    to {background-color: transparent;}
+  }
+.check-mark-icon{
+    position: absolute;
+    top: 30px;
+    left: 23px;
+    color: white;
+}
+
+
 .francaiseicon{
     display: flex;
     flex-direction: row;
