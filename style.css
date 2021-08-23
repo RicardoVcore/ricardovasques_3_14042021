@@ -8,24 +8,39 @@ body {
     font-size: 23px;
 }
 .logo-main { 
+    display: flex;
+    justify-content: center;
     background: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 80px;
-    justify-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 65px;
+    
 }
+
+.logo-main-accueil{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+
+}
+
+.logo-main img {
+    height: 29px;
+}
+
 p{
     justify-self: start;
     gap: 10px;
 }
 
 .recherche {
-    text-align:center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
     background-color: #E9E9E9;
-    border-top-style: inset;
-
+    border-top-style: groove;
 
 }
 .information {
@@ -42,14 +57,25 @@ p{
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 12px;
+    font-size: 17px;
 
 }
 
-h3 {
-    margin-left: 20px;
-    margin-bottom: 0px;
-    font-size: x-large;
+.recherche h3 {
+    
+    font-size: 18px;
+    font-weight: 500;
+}
 
+.navigation{
+    padding-left: 10px;
+}
+
+.navigation-accueil{
+    padding-left: 20px;
+    font-size: 23px;
 }
 
 .fonctionnement {
@@ -61,7 +87,13 @@ h3 {
     margin: 30px 20px 60px 35px; 
 }
 
-
+.resto h3 {
+    padding-top: 50px;
+    padding-left: 26px;
+    padding-bottom: 20px;
+    margin-bottom: -65px;
+    font-size: 23px;
+}
 .fonctionnement div{
     display: flex;
     align-items: center;
@@ -139,10 +171,10 @@ h3 {
     background-color: #C66ED6; 
     border: none;
     color: white;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-bottom: 15px;
     padding-top: 15px;
-    padding-right: 50px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -153,6 +185,8 @@ h3 {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
+/*--menu-animations*/
+
 .chip {
     display: flex;
     flex-direction: column;
@@ -162,24 +196,51 @@ h3 {
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-    animation: fadeIn 2s;
 }
 
-@keyframes fadeIn {
+
+
+.d1{
+    animation-name: affichage;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.d2{
+    animation-name: affichage;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.d3{
+    animation-name: affichage;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes affichage {
     from{
         opacity: 0;
     }
-
     to{
         opacity: 1;
     }
-}   
+}
+
+/*--main-menu--*/
+
+.resto{
+    background-color:#F6F6F6;
+}
+
 
 .RestaurantsMain {
     display: flex;
-    flex-direction: column;
-    background-color:#F6F6F6;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     height: auto;
+    width: auto;
     margin-bottom: 70px;
     gap: 30px;
 }
@@ -199,7 +260,6 @@ h3 {
 }
 
 .RestaurantsImages{
-  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -265,15 +325,11 @@ h3 {
     background-color: #92dec2;
     border-color: transparent;
     color: #4f9270;
-    
-
-
 }
 
 .box-img-restaurants .detailsRestaurants h5{
     font-size: small;
     padding-left: 10px;
-    
 }
 
 .box-img-restaurants .detailsRestaurants span{
@@ -288,12 +344,11 @@ h3 {
 
 footer{
     position: relative;
-    height: 200px;
+    height: 220px;
     left:0;
     right: 0;
     bottom: 0px;
     background-color: #383838;
-    
 }
 footer h1 {
     color: white;
@@ -301,8 +356,8 @@ footer h1 {
     font-weight: 100;
     padding-top: 25px;
     padding-left: 40px;
-    font-size: 24px;
-    
+    font-size: 18px;
+    margin-left: -15px;
 }
 footer ul{
     list-style: none;
@@ -310,6 +365,7 @@ footer ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: -15px;
 }
 
 footer ul i{
@@ -334,13 +390,17 @@ footer ul i{
     top: 19px;
     left: 19px;
 }
+
 /*--menu options--*/
+
 .options{
-    padding-left: 15px;
     text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-underline-position: under;
+    text-underline-offset: 0.3em;
+    text-indent: 15px;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 0.2em;
 }
+
 .menu-info{
     font-size: 15px;
     position: relative;
@@ -391,7 +451,14 @@ h4{
     animation: opac 1s;
 }
 
-.check-mark{
+.check-mark-icon{
+    position: absolute;
+    top: 30px;
+    left: 23px;
+    color: white;
+}
+
+.chip .check-mark-icon:hover{
     position: absolute;
     background-color: aquamarine;
     height: 76px;
@@ -400,20 +467,18 @@ h4{
     left: 300px;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
-    animation: fadebackground 6s infinite;
-    
-}
-@keyframes fadebackground {
-    from {background-color: aquamarine;}
-    to {background-color: transparent;}
-  }
-.check-mark-icon{
-    position: absolute;
-    top: 30px;
-    left: 23px;
-    color: white;
+    animation: selector 3s;
+    cursor: pointer;
 }
 
+@keyframes selector{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 .francaiseicon{
     display: flex;
@@ -423,7 +488,9 @@ h4{
     align-items: center;
 
 }
+
 /*---footer---*/
+
 .footericon{
     display: flex;
     flex-direction: row-reverse;
