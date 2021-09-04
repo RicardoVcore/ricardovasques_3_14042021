@@ -118,8 +118,8 @@ p {
 	background-color: #eaeaea;
 	box-shadow: 0px 3px 0px #73737338 inset;
 }
-.reservation-city--fas {
-	margin: 0 1.5rem 0 -2rem;
+.reservation-city-fas {
+	margin: 0 1rem 0 -2rem;
 }
 .reservation-exploration-discover {
 	font-size: 1.2rem;
@@ -292,9 +292,10 @@ p {
 
 .like-btn-effect {
 	background: linear-gradient(#9356DC, #FF79DA);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
- }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /*--MENU--*/
 /*--BTN-BACK-TO-HOME-PAGE-*/
@@ -473,6 +474,15 @@ footer {
 .footer-info {
 	margin: 0 0 10px 0;
 }
+
+.footer-info i{
+	padding-right: 5px;
+}
+
+.footer-text{
+	padding-left: 5px;
+}
+
 .icon-color {
 	color: #fff;
 }
