@@ -93,7 +93,6 @@ p {
 	}
 }
 /*--RESERVATIONS--*/
-
 .reservation {
 	grid-column-start: 1;
 	display: flex;
@@ -103,7 +102,6 @@ p {
 	background-color: #f6f6f6;
 	font-size: 24px;
 }
-
 .reservation-exploration {
 	margin: 3rem 0 0 0;
 	align-items: center;	
@@ -289,14 +287,11 @@ p {
 	opacity: 1;
 	transition: opacity 1s;
 }
-
 .like-btn-effect {
 	background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 /*--MENU--*/
 /*--BTN-BACK-TO-HOME-PAGE-*/
 .back {
@@ -364,7 +359,7 @@ p {
 	grid-column-start: 2;
 }
 /*--MENU ANIMATIONS--FADE IN--*/
-.menu-offer {
+.menu-offer1 {
 	position: relative;
 	background-color: #fff;
 	height: 70px;
@@ -377,8 +372,42 @@ p {
 	border-radius: 1rem;
 	box-shadow: 3px 3px 10px #dedada;
 	grid-column-start: 2;
-	opacity: 0;
-	animation: fadein 1s 0.3s ease both;
+	opacity: 1;
+	animation: fadein 2s ease-in;
+	transition: all 1s;
+}
+.menu-offer2 {
+	position: relative;
+	background-color: #fff;
+	height: 70px;
+	padding: 0 0 10px 0;
+	margin: 1rem 0 12px 0;
+	cursor: pointer;
+	overflow: hidden;
+	align-items: center;
+	width: 100%;
+	border-radius: 1rem;
+	box-shadow: 3px 3px 10px #dedada;
+	grid-column-start: 2;
+	opacity: 1;
+	animation: fadein 3s ease-in;
+	transition: all 1s;
+}
+.menu-offer3 {
+	position: relative;
+	background-color: #fff;
+	height: 70px;
+	padding: 0 0 10px 0;
+	margin: 1rem 0 12px 0;
+	cursor: pointer;
+	overflow: hidden;
+	align-items: center;
+	width: 100%;
+	border-radius: 1rem;
+	box-shadow: 3px 3px 10px #dedada;
+	grid-column-start: 2;
+	opacity: 1;
+	animation: fadein 5s ease-in;
 	transition: all 1s;
 }
 .menu-offer-title {
@@ -400,25 +429,55 @@ p {
 	left: 100%;
 	width: 20%;
 	height: 100%;
-	border-radius: 0 1.5rem 1.5rem 0;
+	border-radius: 0 1rem 1rem 0;
 	color: #fff;
 	font-size: 20px;
 	transform-origin: right;
 	visibility: hidden;
 }
-.menu-offer:hover > .menu-offer-animation {
+/*--MENU-OFFER1--ANIMAITONS__*/
+.menu-offer1:hover > .menu-offer-animation {
 	visibility: visible;
 	transition: all 0.5s ease-in;
 	transform: translateX(-100%);
 }
-.menu-offer:hover > .menu-offer-animation .menu-offer--circle {
+.menu-offer1:hover > .menu-offer-animation .menu-offer-circle {
 	transform: rotate(360deg);
 	transition-duration: 1.5s;
 }
-.menu-offer:hover > .menu-offer-detail > .price {
+.menu-offer1:hover > .menu-offer-detail > .price {
     transition: all 0.5s ease-in;
     margin-right: 20%;
 }
+/*--MENU-OFFER2--ANIMAITONS__*/
+.menu-offer2:hover > .menu-offer-animation {
+	visibility: visible;
+	transition: all 0.5s ease-in;
+	transform: translateX(-100%);
+}
+.menu-offer2:hover > .menu-offer-animation .menu-offer-circle {
+	transform: rotate(360deg);
+	transition-duration: 1.5s;
+}
+.menu-offer2:hover > .menu-offer-detail > .price {
+    transition: all 0.5s ease-in;
+    margin-right: 20%;
+}
+/*--MENU-OFFER3--ANIMAITONS__*/
+.menu-offer3:hover > .menu-offer-animation {
+	visibility: visible;
+	transition: all 0.5s ease-in;
+	transform: translateX(-100%);
+}
+.menu-offer3:hover > .menu-offer-animation .menu-offer-circle {
+	transform: rotate(360deg);
+	transition-duration: 1.5s;
+}
+.menu-offer3:hover > .menu-offer-detail > .price {
+    transition: all 0.5s ease-in;
+    margin-right: 20%;
+}
+
 /*--MENU ANIMATIONS--END--*/
 .btn-order-container {
 	grid-column-start: 2;
@@ -443,16 +502,16 @@ p {
 }
 
 @keyframes fadein {
-	0% {
-		transform: translateY(-50%);
-		opacity: 0;
+   0%{
+	   opacity: 0;
+
    }
-   50% {
-	opacity: 0.6; 
+   50%{
+	   opacity: 0.5;
+
    }
-	100% {
-		transform: translateY(0);
-		opacity: 1;
+   100%{
+	   opacity: 1;
    }
 }
 /*--FOOTER--*/
@@ -511,9 +570,7 @@ footer h4 {
 	 padding-bottom: 1.5rem;
 	}
 }
-
 /*--768px max--*/
-
 @media screen and (max-width: 768px) {
 	 .homepage {
 		 display: initial;
