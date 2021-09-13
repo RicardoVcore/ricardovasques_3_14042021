@@ -435,7 +435,7 @@ p {
 	transform-origin: right;
 	visibility: hidden;
 }
-/*--MENU-OFFER1--ANIMAITONS__*/
+/*--MENU-OFFER1--ANIMAITONS--*/
 .menu-offer1:hover > .menu-offer-animation {
 	visibility: visible;
 	transition: all 0.5s ease-in;
@@ -449,7 +449,7 @@ p {
     transition: all 0.5s ease-in;
     margin-right: 20%;
 }
-/*--MENU-OFFER2--ANIMAITONS__*/
+/*--MENU-OFFER2--ANIMAITONS--*/
 .menu-offer2:hover > .menu-offer-animation {
 	visibility: visible;
 	transition: all 0.5s ease-in;
@@ -463,7 +463,7 @@ p {
     transition: all 0.5s ease-in;
     margin-right: 20%;
 }
-/*--MENU-OFFER3--ANIMAITONS__*/
+/*--MENU-OFFER3--ANIMAITONS--*/
 .menu-offer3:hover > .menu-offer-animation {
 	visibility: visible;
 	transition: all 0.5s ease-in;
@@ -477,7 +477,6 @@ p {
     transition: all 0.5s ease-in;
     margin-right: 20%;
 }
-
 /*--MENU ANIMATIONS--END--*/
 .btn-order-container {
 	grid-column-start: 2;
@@ -661,7 +660,7 @@ footer h4 {
 	animation: spin 1s linear infinite;
   }
 .loader:before {
-	content: "";
+	content: none;
 	position: absolute;
 	top: 5px;
 	left: 5px;
@@ -675,7 +674,7 @@ footer h4 {
 	box-shadow: 0 0 5px #99E2D0;
   }
 .loader:after {
-	content: "";
+	content: none;
 	position: absolute;
 	top: 15px;
 	left: 15px;
